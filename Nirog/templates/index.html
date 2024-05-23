@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  ,<title>Nirog</title>
+  <style>
+    body {
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220522/pngtree-abstract-light-blue-wavy-modern-curve-lines-with-clean-background-vector-image_1379860.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      text-align: center;
+      font-family: 'Times New Roman', sans-serif;
+    }
+
+    h1 {
+      color: #1f495e;
+      text-size-adjust: 80px;
+    }
+
+    #button-container {
+      margin-top: 30px;
+    }
+
+    button {
+      display: inline-block;
+      padding: 55px 80px;
+      font-size: 16px;
+      margin: 55px;
+      background-color: #4d453b;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #70b0d3;
+    }
+
+    #single-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: -40px;
+    }
+
+    #single-button {
+      padding: 55px 80px;
+      font-size: 18px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #single-button:hover {
+      background-color: #70b0d3;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="font-size: 80px; text-align:center">Nirog</h1>
+  
+  <div id="button-container">
+    <button onclick="enter_data()">Diabetes Predictor</button>
+    <button onclick="get_data()">Heart Attack Predictor</button>
+  </div>
+  
+  <div id="single-button-container">
+    <button  id="single-button" onclick="rate_data()">Diabetes Pedegree Function Calculator</button>
+  </div>
+  <script>
+    function enter_data(){
+      window.location.href='/diabeteshtml'
+    }
+    function get_data(){
+      window.location.href='/hearthtml'
+    }
+    function rate_data(){
+      window.location.href='/dpfhtml'
+    }
+
+  </script>
+</body>
+</html>

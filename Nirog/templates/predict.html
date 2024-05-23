@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Predictor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+        body {
+            /* background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220522/pngtree-abstract-light-blue-wavy-modern-curve-lines-with-clean-background-vector-image_1379860.jpg); */
+            background-image: url(https://wallpaperaccess.com/full/402810.jpg);
+            background-size: cover;
+            background-repeat:no-repeat ;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-top: 50px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background: 2px solid transparent;
+            backdrop-filter: blur(20px);
+            color: black;
+            font-weight: 700;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin-top: 20px;
+            color: #333;
+        }
+        .prediction-box {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            display: inline-block;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    {% if prediction %}
+    <div class="prediction-box">
+        <p>{{ prediction1 }}</p>
+        <p>{{ prediction }}</p>
+
+    </div>
+{% endif %}
+</body>
+</html>
